@@ -48,6 +48,7 @@ tidy_set <- tidy_set %>%
   mutate(activity_id = activity_labels[activity_id]) %>%
   group_by(subject_id,activity_id) %>%
   summarize(mean = mean(mean,rm.na=TRUE), sd= mean(sd,rm.na=TRUE))
+##
 
 
 

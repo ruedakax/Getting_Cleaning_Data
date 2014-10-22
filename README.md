@@ -16,9 +16,9 @@ the analisys steps are as follow:
 
 2) Each data source (test, train) have three variables to read the primary data from the txt files:
 	
-   /data/train/subject_train.txt : subject_id column (train_col_subject)
-   /data/train/y_train.txt : actitvity_id column (train_col_activity)
-   /data/train/X_train.txt: data vector (train_vector)
+   	/data/train/subject_train.txt : subject_id column (train_col_subject)
+   	/data/train/y_train.txt : actitvity_id column (train_col_activity)
+   	/data/train/X_train.txt: data vector (train_vector)
 	
    The same applies for test data source.
 

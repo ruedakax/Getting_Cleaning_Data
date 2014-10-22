@@ -38,17 +38,17 @@ rm(test_col_subject);rm(test_col_activity);rm(test_vector);rm(sd_test_vector);rm
 merged_data <- rbind(train_set,test_set)
 #remove objects
 rm(train_set);rm(test_set)
-# activity_id character values for numeric ones ones
+# activity_id character values for numeric ones one
 activity_labels =c("WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS","SITTING","STANDING","LAYING")
 #tidying data
 library(dplyr)
 tidy_set <- tbl_df(merged_data)
 rm(merged_data)
-tidy_set <- tidy_set %>%
+tidy_set %>%
   mutate(activity_id = activity_labels[activity_id]) %>%
   group_by(subject_id,activity_id) %>%
   summarize(mean = mean(mean,rm.na=TRUE), sd= mean(sd,rm.na=TRUE))
-##
+
 
 
 

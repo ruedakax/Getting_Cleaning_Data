@@ -1,6 +1,6 @@
 ##codebooks 
 
-### test data set
+### train data set
 
 train_col_subject <- holds the subject data for train source
 
@@ -33,7 +33,7 @@ sd_test_vector <- holds the result of using the apply function to get the standa
 
 test_set <-  holds the result of using the cbind function to merge train_col_subject,train_col_activity,mean_train_vector,sd_train_vector
 
-
+### merged data
 
 merged_data <- holds the result of using the rbind function to merge  train_set  test_set 
 
